@@ -1,0 +1,176 @@
+*{
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 25px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #b8ffc4;
+}
+
+.main{
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.3), 0 6px 6px 2px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1450px;
+  min-width: 1450px;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 15px;
+  
+}
+
+td {
+  padding: 15px;
+}
+
+
+#table-main{
+  font-size: 30px;
+  text-align: center;
+}
+
+.table-white, .table-gray, .table-black, .table-yellow, .table-green, .table-orange,
+.table-blue, .table-cyan, .table-red, .table-khaki, .table-pink, .table-dark-yellow,
+.table-aqua, .table-dark-green, .table-dark-green, .table-dark-blue, .table-dark-red,
+.table-dark-pink, .table-no-color{
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px black;
+  display: inline-block;
+  width: 180px;
+}
+
+.table-white{
+  background: white;
+}
+
+.table-gray{
+  background: #808080;
+}
+
+.table-black{
+  color: white;
+  background: black;
+}
+
+.table-yellow{
+  background: #ffff00;
+}
+
+.table-green{
+  background: #00ff00;
+}
+
+.table-orange{
+  background: #FF8C00;
+}
+
+.table-blue{
+  background: #008cf0;
+}
+
+.table-cyan{
+  background: #008B8B;
+}
+
+.table-red{
+  background: #ff0000;
+}
+
+.table-khaki{
+  background: #F0E68C;
+}
+
+.table-pink{
+  background: #ff00ff;
+}
+
+.table-dark-yellow{
+  background: #b57900;
+}
+
+.table-aqua{
+  background: #7FFFD4;
+}
+
+.table-dark-green{
+  background: #013220;
+}
+
+.table-dark-blue{
+  background: #00508a;
+}
+
+.table-dark-red{
+  background: #8b0000;
+}
+
+.table-dark-pink{
+  background: #9400d3;
+}
+
+.table-no-color{
+  background: #a6caf0;
+}
+
+a:active{
+  color: blue;
+  text-decoration: none;
+}
+
+a{
+  color: blue;
+  text-decoration: none;
+}
+
+img{
+  box-shadow: 1px 1px 20px 5px black;
+  clear: both;
+}
+
+.example-action{
+  font-size: 20px;
+  background: #6ecd32;
+  padding: 5px;
+  box-shadow: 2px 2px 1px black;
+}
+
+.example-result{
+  font-size: 20px;
+  background: #deb812;
+  padding: 5px;
+  box-shadow: 2px 2px 1px black;
+}
+
+.code{
+  background: #fff573;
+  padding: 20px;
+  width: 50%;
+  font-weight: bold;
+  box-shadow: 2px 2px 1px black;
+}
+
+code{
+  font-size: 13.5px;
+}
