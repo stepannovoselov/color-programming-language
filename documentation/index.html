@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Piet Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 align="center" style="font-size: 40px; margin-top: 0;">Мой цветной язык программирования!</h1>
+        <table border="1">
+            <tr id="table-main">
+                <td>Цвет</td>
+                <td>Команда</td>
+                <td>Подробнее</td>
+            </tr>
+            <tr class="tr-white">
+                <td align="center"><span class="table-white">Белый цвет</span></td>
+                <td>Печатает первое значение стека в консоль как цифру</td>
+                <td><a href="#white-work">Работа с белым цветом</a></td>
+            </tr>
+            <tr class="tr-gray">
+                <td align="center"><span class="table-gray">Серый цвет</span></td>
+                <td>Печатает первое значение стека в консоль как символ</td>
+                <td><a href="#gray-work">Работа с серым цветом</a></td>
+            </tr>
+            <tr class="tr-black">
+                <td align="center"><span class="table-black">Черный цвет</span></td>
+                <td>Определяет начало и конец блока кода</td>
+                <td><a href="#black-work">Работа с черным цветом</a></td>
+            </tr>
+            <tr class="tr-yellow">
+                <td align="center"><span class="table-yellow">Желтый цвет</span></td>
+                <td>Извлекает первые два значения стека, складывает их, и помещает результат обратно в стек</td>
+                <td><a href="#yellow-work">Работа с желтым цветом</a></td>
+            </tr>
+            <tr class="tr-green">
+                <td align="center"><span class="table-green">Зеленый цвет</span></td>
+                <td>Добавляет в стек значение счетчика</td>
+                <td><a href="#green-work">Работа с зеленым цветом</a></td>
+            </tr>
+            <tr class="tr-orange">
+                <td align="center"><span class="table-orange">Оранжевый цвет</span></td>
+                <td>Вызывает блок кода номер которого соответствует счетчику</td>
+                <td><a href="#orange-work">Работа с оранжевым цветом</a></td>
+            </tr>
+            <tr class="tr-blue">
+                <td align="center"><span class="table-blue">Синий цвет</span></td>
+                <td>Добавляет результат ввода пользователя в стек как цифру</td>
+                <td><a href="#blue-work">Работа с синим цветом</a></td>
+            </tr>
+            <tr class="tr-cyan">
+                <td align="center"><span class="table-cyan">Циановый цвет</span></td>
+                <td>Позволяет создать цикл который будет повторять операции в нем такое количество раз какое установлено на счетчике</td>
+                <td><a href="#cyan-work">Работа с циановым цветом</a></td>
+            </tr>
+            <tr class="tr-red">
+                <td align="center"><span class="table-red">Красный цвет</span></td>
+                <td>Увеличивает счетчик на единицу</td>
+                <td><a href="#red-work">Работа с красным цветом</a></td>
+            </tr>
+            <tr class="tr-khaki">
+                <td align="center"><span class="table-khaki">Цвет хаки</span></td>
+                <td>Блокирует выполнение блока без вызова в котором находится</td>
+                <td><a href="#khaki-work">Работа с цветом хаки</a></td>
+            </tr>
+            <tr class="tr-pink">
+                <td align="center"><span class="table-pink">Розовый цвет</span></td>
+                <td>Извлекает первые два значения стека, делит второе на первое, и результат помещает обратно в стек</td>
+                <td><a href="#pink-work">Работа с розовым цветом</a></td>
+            </tr>
+            <tr class="tr-dark-yellow">
+                <td align="center"><span class="table-dark-yellow">Темно-желтый цвет</span></td>
+                <td>Извлекает первые два значения стека, умножает их, и результат помещает обратно в стек</td>
+                <td><a href="#dark-yellow-work">Работа с темно-желтым цветом</a></td>
+            </tr>
+            <tr class="tr-aqua">
+                <td align="center"><span class="table-aqua">Цвет аква</span></td>
+                <td>Дублирует первый элемент стека</td>
+                <td><a href="#aqua-work">Работа с цветом аква</a></td>
+            </tr>
+            <tr class="tr-dark-green">
+                <td align="center"><span class="table-dark-green">Темно-зеленый цвет</span></td>
+                <td>Позволяет создать условие, где проверяется первая цифра стека на соответствие значения счетчика</td>
+                <td><a href="#dark-green-work">Работа с темно-зеленым цветом</a></td>
+            </tr>
+            <tr class="tr-dark-blue">
+                <td align="center"><span class="table-dark-blue">Темно-синий цвет</span></td>
+                <td>Удаляет первый элемент стека</td>
+                <td><a href="#dark-blue-work">Работа с темно-синим цветом</a></td>
+            </tr>
+            <tr class="tr-dark-red">
+                <td align="center"><span class="table-dark-red">Темно-красный цвет</span></td>
+                <td>Меняет знак первого элемента стека на противоположный</td>
+                <td><a href="#dark-red-work">Работа с темно-красным цветом</a></td>
+            </tr>
+            <tr class="tr-dark-pink">
+                <td align="center"><span class="table-dark-pink">Темно-розовый цвет</span></td>
+                <td>Перемещает последний элемент стека в начало</td>
+                <td><a href="#dark-pink-work">Работа с темно-розовым цветом</a></td>
+            </tr>
+            <tr class="tr-no-color">
+                <td align="center"><span class="table-no-color">Нет цвета</span></td>
+                <td>Пиксель не учитывается</td>
+                <td><a href="#no-color-work">Работа без цвета</a></td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <p><h1>Начало работы</h1></p>
+        <p>Мой язык программирования практически уникален<br>Он основан на образе и подобии <a href="https://ru.wikipedia.org/wiki/Piet" target="_blank">Piet</a><br></p>
+        <p>Для того чтобы начать творить на этом цветном языке вам понадобится:</p>
+        <ol>
+            <li>Среда для рисования</li>
+            <li>Интерпретатор для картинки</li>
+            <li>Понимание работы этого языка</li>
+        </ol>
+        <br>
+        <p>Пример начала работы:</p>
+        <ol>
+            <li>Открыть среду для рисования</li>
+            <li>Выбрать черный цвет</li>
+            <li>Открыть новый блок кода</li>
+            <li>Использовать любые цвета для описания программы</li>
+            <li>Закрыть блок кода</li>
+            <li>Отступить несколько клеток для повышения читаемости</li>
+            <li>См. пункты 2-6</li>
+            <li>Нажать кнопку "Сохранить PNG"</li>
+            <li>Открыть интерпретатор</li>
+            <li>Выбрать нужное изображение</li>
+            <li>Смотреть на результат</li>
+        </ol>
+        <br>
+        <p>Ниже вы можете увидеть:</p>
+        <ol>
+            <li>Описание и примеры работы с разными цветами пикселей</li>
+            <li>Описание и примеры разных программ</li>
+            <li>Инструменты, которые могут помочь в разработке программ</li>
+        </ol>
+
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1>Что нужно знать перед тем как написать свою первую программу?</h1></p>
+        <ol>
+            <li>Вам просто необходимо знать о функции каждого цвета пикселя</li>
+            <li>Вам просто необходимо знать о том, что первый элемент стека - самый правый</li>
+        </ol>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="white-work">Работа с белым цветом</h1></p>
+        <p>Пиксель белого цвета используется для печати первого значения стека в консоль как число</p>
+        <img src="imgs\Работа с белым цветом.JPG" alt="Работа с белым цветом" style="float: right; width: 300px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p><span class="example-action">Блок 1: добавляем в стек 2 и 3</span></p>
+                <p><span class="example-result">Результат: стек <2, 3></span></p>
+            </li>
+            <li>
+                <p><span class="example-action">Блок 2: печатаем значение первого значения стека в консоль</span></p>
+                <p><span class="example-result">Результат: стек <2, 3>, консоль: 3</span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(2) <br>
+                stack.append(3) <br><br>
+
+                print(stack[-1])
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="gray-work">Работа с серым цветом</h1></p>
+        <p>Пиксель серого цвета используется для печати первого значения стека в консоль как символ<br>
+        При таком методе печати все числа автоматически переводятся в символы используя <a href="https://vscode.ru/filesForArticles/ascii.pdf" target="_blank">ACII</a></p>
+        <img src="imgs\Работа с серым цветом.JPG" alt="Работа с серым цветом" style="float: right; width: 450px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 4, 4, 4</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Умножаем первые два значения 3 раза, т.е. 4x4x4</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 8</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Складываем первые два значения</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <72></span></p>
+            </li>
+            <li>
+                <p><span class="example-action">Блок 2: печатаем значение первого значения стека в консоль как символ</span></p>
+                <p><span class="example-result">Результат: стек <72>, консоль: H</span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(4) <br>
+                stack.append(4) <br>
+                stack.append(4) <br><br>
+
+                temp = stack[-1]*stack[-2] <br>
+                stack = stack[:len(stack)-2] <br>
+                stack.append(temp) <br><br>
+
+                temp = stack[-1]*stack[-2] <br>
+                stack = stack[:len(stack)-2] <br>
+                stack.append(temp) <br><br>
+
+                stack.append(8) <br><br>
+
+                temp = stack[-1]+stack[-2] <br>
+                stack = stack[:len(stack)-2] <br>
+                stack.append(temp) <br><br>
+
+                print(chr(stack[-1]))
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="black-work">Работа с черным цветом</h1></p>
+        <p>Пиксель черного цвета используется для обозначения начала и конца блока кода<br>
+        При этом блок блок кода может быть открыт на одной строке, а закрыт на любой следующей<br>
+        Блоки кода выполняются последовательно, если не были <a href="">экранированы</a><br>
+        Нумерация первого блока начинается с единицы и увеличивается с каждым последовательным блоком на единицу</p>
+        <img src="imgs\Работа с черным цветом.JPG" alt="Работа с черным цветом" style="float: right; width: 350px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p><span class="example-action">Блок 1: добавляем в стек 3</span></p>
+                <p><span class="example-result">Результат: стек <3></span></p>
+            </li>
+            <li>
+                <p><span class="example-action">Блок 2: добавляем в стек 4</span></p>
+                <p><span class="example-result">Результат: стек <3, 4></span></p>
+            </li>
+            <li>
+                <p><span class="example-action">Блок 3: печатаем значение первого элемента в консоль</span></p>
+                <p><span class="example-result">Результат: стек <3, 4>, консоль: 4</span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(3) <br><br>
+
+                stack.append(4) <br><br>
+
+                print(stack[-1])
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="yellow-work">Работа с желтым цветом</h1></p>
+        <p>Пиксель желтого цвета используется для сложения первых двух чисел стека<br>
+        Этот пиксель извлекает первые два числа из стека, складывает их, а затем помещает результат в массив<br>
+        Важно учитывать, что числа удаляются из стека и заменяются результатом сложения</p>
+        <img src="imgs\Работа с желтым цветом.JPG" alt="Работа с желтым цветом" style="float: right; width: 300px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 2 и 3</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Складываем первые два числа из стека, т.е. 2+3</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Печатаем значение первого элемента в консоль</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <5>, консоль: 5</span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(2) <br>
+                stack.append(3) <br><br>
+
+                temp = stack[-2] + stack[-1] <br>
+                stack = stack[:len(stack)-2] <br>
+                stack.append(temp) <br><br>
+
+                print(stack[-1])
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="green-work">Работа с зеленым цветом</h1></p>
+        <p>Пиксель зеленого цвета используется для добавления в стек значения счетчика<br>
+        При добавлении счетчик обнуляется</p>
+        <img src="imgs\Работа с зеленым цветом.JPG" alt="Работа с зеленым цветом" style="float: right; width: 300px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p><span class="example-action">Блок 1: добавляем в стек 2, 0 и 3</span></p>
+                <p><span class="example-result">Результат: стек <2, 0, 3></span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(2) <br>
+                stack.append(0) <br>
+                stack.append(3)
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="orange-work">Работа с оранжевым цветом</h1></p>
+        <p>Пиксель оранжевого цвета используется для вызова блока кода который соответствует значению счетчика<br>
+        При вызове блока кода счетчик обнуляется</p>
+        <img src="imgs\Работа с оранжевым цветом.JPG" alt="Работа с оранжевым цветом" style="float: right; width: 250px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p><span class="example-action">Блок 1: добавляем в стек 4</span></p>
+                <p><span class="example-result">Результат: стек <4></span></p>
+            </li>
+            <li>
+                <p><span class="example-action">Блок 2: увеличиваем счетчик на один и вызываем первый блок кода (2 раза)</span></p>
+                <p><span class="example-result">Результат: стек <4, 4, 4></span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                def first(): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stack.append(4) <br>
+                first() <br><br>
+
+                first() <br>
+                first()
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="blue-work">Работа с синим цветом</h1></p>
+        <p>Пиксель синего цвета используется для приема пользовательского ввода<br>
+        Введенные данные автоматически добавляются в стек<br>
+        Важно помнить, что в случае если пользователь вводит символ или нецелое число, то оно переводится в целые числа используя <a href="https://vscode.ru/filesForArticles/ascii.pdf" target="_blank">ACII</a><br>
+        Также стоит отметить, что в случае если пользователь вводит несколько символов, то в стек добавляется несколько значений - код каждого символа<br>
+        Следует знать, что в интерпретаторе ввод выглядит как два знака больше (>>)</p>
+        <img src="imgs\Работа с синим цветом.JPG" alt="Работа с синим цветом" style="float: right; width: 150px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Пользователь вводит число</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Печатаем значение первого элемента в консоль</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <(пользовательское число)>, консоль: (пользовательское число)</span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(int(input())) # При условии что вводится точно целое число<br><br>
+
+                print(stack[-1])
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="cyan-work">Работа с циановым цветом</h1></p>
+        <p>Пиксель цианового цвета используется для создания цикла, который будет повторяться столько раз, сколько установлено на счетчике<br>
+        При создании цикла счетчик обнуляется<br>
+        При работе с циановым цветом важно не забывать, что цикл может быть завершен в том же блоке парным пикселем такого же цвета</p>
+        <img src="imgs\Работа с циановым цветом.JPG" alt="Работа с циановым цветом" style="float: right; width: 350px; margin-top: 40px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Увеличиваем счетчик на 4</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Определяем цикл из 4 повторений</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">На каждой итерации добавляем в стек 2</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Закрываем цикл парным пикселем чтобы цикл не затрагивал следующие операции этого блока кода</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Увеличиваем счетчик на 3</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Определяем цикл из 3 повторений</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">На каждой итерации печатаем первое значение стека и умножаем первые два значения</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <8>, консоль: 2, 4, 8</span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br>
+                counter = 0 <br><br>
+
+                counter += 4 <br><br>
+
+                for i in range(counter): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stack.append(2) <br>
+                counter = 0 <br><br>
+
+                counter += 3 <br>
+                for i in range(counter): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(stack[-1]) <br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;temp = stack[-2] * stack[-1] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stack = stack[:len(stack)-2] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stack.append(temp) <br>
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="red-work">Работа с красным цветом</h1></p>
+        <p>Пиксель красного цвета используется для увеличения значения счетчика на один<br>
+        Счетчик - независимая переменная с которой взаимодействуют некоторые другие цвета</p>
+        <img src="imgs\Работа с красным цветом.JPG" alt="Работа с красным цветом" style="float: right; width: 200px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Увеличиваем счетчик на 2</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 2</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Печатаем значение первого элемента в консоль</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <2>, консоль: 2</span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br>
+                counter = 0 <br><br>
+
+                counter += 2 <br>
+                stack.append(counter) <br>
+                counter = 0 <br><br>
+
+                print(stack[-1])
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="khaki-work">Работа с цветом хаки*</h1></p>
+        <p>Пиксель цвета хаки используется для экранирования блока кода<br>
+        Если пиксель этого цвета находится в блоке кода, то этот блок не выполняется без <a href="#orange-work">вызова</a><br>
+        Важно знать, что такой пиксель может находиться в любом месте внутри блока кода для его экранирования</p>
+        <img src="imgs\работа с цветом хаки.JPG" alt="Работа с оранжевым цветом" style="float: right; width: 250px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p><span class="example-action">Блок 1 (не выполняется): добавляем в стек 4</span></p>
+                <p><span class="example-result">Результат: в стек добавляется 4</span></p>
+            </li>
+            <li>
+                <p><span class="example-action">Блок 2: увеличиваем счетчик на один и вызываем первый блок кода (2 раза)</span></p>
+                <p><span class="example-result">Результат: стек <4, 4></span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                def first(): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stack.append(4) <br><br>
+
+                first() <br>
+                first()
+            </code>
+        </div>
+        <p>*См. разницу с <a href="#orange-work">работой с оранжевым цветом</a></p>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="pink-work">Работа с розовым цветом</h1></p>
+        <p>Пиксель розового цвета используется для того, чтобы разделить второе число стека на первое<br>
+        Этот пиксель извлекает первые два числа из стека, делит предпоследнее на первое, а затем помещает результат в массив<br>
+        Важно учитывать, что числа удаляются из стека и заменяются результатом деления<br>
+        Также важно учитывать, что результат деления округляется по правилам округления</p>
+        <img src="imgs\Работа с розовым цветом.JPG" alt="Работа с розовым цветом" style="float: right; width: 250px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 4 и 2</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Делим 4 на 2</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <2></span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(4) <br>
+                stack.append(2) <br><br>
+
+                temp = int(stack[-2]/stack[-1]) <br>
+                stack = stack[:len(stack)-2] <br>
+                stack.append(temp)
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="dark-yellow-work">Работа с темно-желтым цветом</h1></p>
+        <p>Пиксель темно-желтого цвета используется для того, чтобы умножить первое число стека на второе<br>
+        Этот пиксель извлекает первые два числа из стека, умножает их, а затем помещает результат в массив<br>
+        Важно учитывать, что числа удаляются из стека и заменяются результатом умножения</p>
+        <img src="imgs\Работа с темно-желтым цветом.JPG" alt="Работа с темно-желтым цветом" style="float: right; width: 250px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 4 и 2</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Умножаем 4 на 2</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <8></span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(4) <br>
+                stack.append(2) <br><br>
+
+                temp = stack[-2]*stack[-1] <br>
+                stack = stack[:len(stack)-2] <br>
+                stack.append(temp)
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="aqua-work">Работа с цветом аква</h1></p>
+        <p>Пиксель цвета аква используется для дублирования первого элемента стека</p>
+        <img src="imgs\работа с цветом аква.JPG" alt="Работа с цветом аква" style="float: right; width: 250px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 2</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Дублируем первый элемент стека (2 раза)</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <2, 2, 2></span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(2) <br><br>
+
+                stack.append(stack[-1]) <br>
+                stack.append(stack[-1])
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="dark-green-work">Работа с темно-зеленым цветом</h1></p>
+        <p>Пиксель темно-зеленого цвета используется для создания условия, которое проверяет равно ли значение первого элемента стека значению счетчика<br>
+        При создании условия счетчик обнуляется, даже если условие не будет выполняться<br>
+        При работе с этим цветом важно не забывать что условие может быть завершено в том же блоке парным пикселем такого же цвета</p>
+        <img src="imgs\Работа с темно-зеленым цветом.JPG" alt="Работа с темно-зеленым цветом" style="float: right; width: 350px; margin-top: 40px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 2, 2</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <2, 2></span></p>
+            </li>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 2:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Пользователь вводит число</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Увеличиваем значение счетчика на 1</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Создаем условие: если первый элемент массива равен 1, то</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action" style="margin-left: 20px;">Если условие выполняется то: удаляем первый элемент стека</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action" style="margin-left: 20px;">Если условие выполняется то: складываем первые два числа стека</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action" style="margin-left: 20px;">Если условие выполняется то: печатаем первое число стека</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Закрываем условие парным пикселем чтобы условие не затрагивало следующие операции этого блока кода</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Увеличиваем значение счетчика на 2</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Создаем условие: если первый элемент массива равен 2, то</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action" style="margin-left: 20px;">Если условие выполняется то: удаляем первый элемент стека</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action" style="margin-left: 20px;">Если условие выполняется то: умножаем первые два числа стека</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action" style="margin-left: 20px;">Если условие выполняется то: печатаем первое число стека</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: в зависимости от введенного значения</span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br>
+                counter = 0 <br><br>
+
+                stack.append(2) <br>
+                stack.append(2) <br><br>
+
+                stack.append(int(input())) # При условии что вводится точно целое число<br><br>
+
+                counter += 1 <br><br>
+
+                if counter == stack[-1]: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;del stack[-1] <br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;temp = stack[-2] + stack[-1] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stack = stack[:len(stack)-2] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stack.append(temp) <br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;print(stack[-1]) <br>
+                counter = 0 <br><br>
+
+                counter += 1 <br>
+                counter += 1 <br><br>
+
+                if counter == stack[-1]: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;del stack[-1] <br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;temp = stack[-2] * stack[-1] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stack = stack[:len(stack)-2] <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;stack.append(temp) <br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;print(stack[-1]) <br>
+            </code>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="dark-blue-work">Работа с темно-синим цветом</h1></p>
+        <p>Пиксель темно-синего цвета используется для удаления первого элемента стека</p>
+        <img src="imgs\работа с темно-синим цветом.JPG" alt="Работа с темно-синим цветом" style="float: right; width: 300px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 2, 3, 1</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Удаляем первое значение стека</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <2, 3></span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(2) <br>
+                stack.append(3) <br>
+                stack.append(1) <br><br>
+
+                del stack[-1]
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="dark-red-work">Работа с темно-красным цветом</h1></p>
+        <p>Пиксель темно-красного цвета используется для того, чтобы изменить знак первого числа стека на противоположный</p>
+        <img src="imgs\работа с темно-красным цветом.JPG" alt="Работа с темно-красным цветом" style="float: right; width: 250px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 4, 2</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Изменяем знак первого элемента стека</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <4, -2></span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(4) <br>
+                stack.append(2) <br><br>
+
+                stack[-1] = stack[-1] * -1
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="dark-pink-work">Работа с темно-розовым цветом</h1></p>
+        <p>Пиксель темно-розового цвета используется для того, чтобы переместить последний элемент стека на первое место<br>
+        Важно понимать, что при этом стек сдвигается на один элемент (первый элемент становится вторым, второй - третьим, и т.д.)</p>
+        <img src="imgs\работа с темно-розовым цветом.JPG" alt="Работа с темно-розовым цветом" style="float: right; width: 250px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 3, 1</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Переносим последний элемент в начало стека</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <1, 3></span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(3) <br>
+                stack.append(1) <br><br>
+
+                temp = stack[0] <br>
+                del stack[0] <br><br>
+
+                stack.append(temp)
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1 id="no-color-work">Работа без цвета</h1></p>
+        <p>Цвет не используется когда никакие операции выполнять не нужно<br>
+        Важно знать, что пиксели без цвета полностью игнорируются и могут служить визуальным разделением элементов блока кода</p>
+        <img src="imgs\работа без цвета.JPG" alt="Работа без цвета" style="float: right; width: 350px; margin-top: 20px;">
+        <p>На фотографии:</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="example-action">
+                        Блок 1:
+                        <ol>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Добавляем в стек 2, 3</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Складываем первые два значения стека</span>
+                            </li>
+                            <li style="margin: 13px;">
+                                <span class="example-action">Печатаем первый элемент стека в консоль</span>
+                            </li>
+                        </ol>
+                    </span>
+                </p>
+                <p><span class="example-result">Результат: стек <5>, консоль: 5</span></p>
+            </li>
+        </ul>
+        <br>
+        <p>Приведем пример этой же программы на языке программирования Python:</p>
+        <div class="code">
+            <code>
+                stack = [] <br><br>
+
+                stack.append(2) <br>
+                stack.append(3) <br><br>
+
+                temp = stack[-2] + stack[-1] <br>
+                stack = stack[:len(stack)-2] <br>
+                stack.append(temp)
+            </code>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1>Примеры и описание программ</h1></p>
+        <ol>
+            <li style="font-size: 25px;"><h2>«Hello, world!»</h2></li>
+            <img src="imgs\хело ворд без клеток.JPG" alt="hello, world!" width="500px" style="float: right; margin-left: 100px;">
+            <img src="imgs\хело ворд.JPG" alt="hello, world!" width="499px" style="float: right; margin-left: 100px; margin-top: 60px">
+            <p>Так может выглядеть ваша первая программа на моем языке</p>
+            <p>Страшно? Я уверен, что да</p>
+            <p>Теперь по порядку:</p>
+            <ol>
+                <li>Для того чтобы напечатать в консоль «Hello, world!» нам необходимо набрать ACII код каждой буквы</li>
+                <li>Для этого в каждой строке необходимо использовать математические операции для быстрого набора числа</li>
+                <li>Обратимся к одному из инструментов ниже для перевода фразы «Hello, world!» в ACII код<br>Получаем: <72 101 108 108 111 44 32 119 111 114 108 100 33><br>Это должен быть наш конечный стек</li>
+                <li>Теперь, вооружившись знаниями математики, заполняем стек нужными значениями</li>
+                <li>Блок кода 1:<br>Добавляем в стек 4, 4, 4<br>Перемножаем это и получаем 64<br>Добавляем в стек 8 и складываем с 64<br>В итоге получаем стек <72></li>
+                <li>Блок кода 2:<br>Добавляем в стек 5, 4, 5<br>Перемножаем это и получаем 100<br>Добавляем в стек 1 и складываем с 100<br>В итоге получаем 101</li>
+                <li>Дальше можно действовать по похожей схеме и набирать нужные числа</li>
+                <li>В последнем блоке создается цикл из 13 повторений (столько же символов в фразе), который перемещает последний элемент на первое место, печатает его и удаляет</li>
+                <li>Если убрать темно-розовый цвет, то надпись перевернется</li>
+            </ol>
+
+            <br>
+            <br>
+
+            <p>Приведем пример начала и конца этой же программы на языке программирования Python:</p>
+            <div class="code">
+                <code>
+                    stack = [] <br><br>
+
+                    # Начало первого блока <br><br>
+
+                    stack.append(4) <br>
+                    stack.append(4) <br>
+                    stack.append(4) <br><br>
+
+                    temp = stack[-2] * stack[-1] <br>
+                    stack = stack[:len(stack)-2] <br>
+                    stack.append(temp) <br><br>
+
+                    temp = stack[-2] * stack[-1] <br>
+                    stack = stack[:len(stack)-2] <br>
+                    stack.append(temp) <br><br>
+
+                    stack.append(8) <br><br>
+
+                    temp = stack[-2] + stack[-1] <br>
+                    stack = stack[:len(stack)-2] <br>
+                    stack.append(temp) <br><br>
+
+                    # Конец первого блока <br><br>
+
+                    # Начало второго блока <br><br>
+
+                    stack.append(5) <br>
+                    stack.append(4) <br>
+                    stack.append(5) <br><br>
+
+                    temp = stack[-2] * stack[-1] <br>
+                    stack = stack[:len(stack)-2] <br>
+                    stack.append(temp) <br><br>
+
+                    temp = stack[-2] * stack[-1] <br>
+                    stack = stack[:len(stack)-2] <br>
+                    stack.append(temp) <br><br>
+
+                    stack.append(1) <br><br>
+
+                    temp = stack[-2] + stack[-1] <br>
+                    stack = stack[:len(stack)-2] <br>
+                    stack.append(temp) <br><br>
+
+                    # Конец второго блока <br><br>
+
+
+                    ... # Остальные блоки до последнего <br><br>
+
+
+                    # Начало последнего блока <br><br>
+
+                    for i in range(13):  # При условии что все 13 блоков кода выполнились <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;temp = stack[0] <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;del stack[0] <br><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;stack.append(temp) <br><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(chr(stack[-1])) <br><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;del stack[-1] <br><br>
+
+                    # Конец последнего блока
+                </code>
+            </div>
+        </ol>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+
+        <p><h1>Инструменты для разработки</h1></p>
+        <ol>
+            <li style="font-size: 25px;"><h2>Работа с кодировкой ACII</h2>
+                <textarea id="text2acii_input" placeholder="Введите любые символы для перевода или целые цифры для обратного перевода" rows="4" cols="80"></textarea>
+                <div id="text2acii_output"><b>Результат:</b></div>
+            </li>
+        </ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
